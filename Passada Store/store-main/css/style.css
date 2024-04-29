@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'clothes';
+    src: url(../fonts/Clothes.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'music';
+    src: url(../fonts/Music.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'shoes';
+    src: url(../fonts/Shoes.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fonts/Montserrat-ExtraLight.ttf);
+}
+
+body {
+    max-width: 1200px;
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+    font-weight: lighter;
+    background-color: buttonface;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+input {
+    width: 350px;
+    background-color: buttonface;
+    border: 0;
+    height: 30px;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #f0f0f0;
+    height: 100px;
+    box-shadow: 1 3px 5px 1px rgba(0, 0, 0, 0.16);
+}
+
+.header__container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 15px 15;
+}
+
+.header__logo {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    color: #207dc9;
+    padding: 10px 10px 30px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__pesquisa {
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login, .Cadastrar1 {
+    background-color: #2047c9;
+    color: white;
+    border: 0;
+    height: 0.7cm;
+    width: 1.9cm;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    display: inline-block; /* Aqui está a mudança */
+    margin-right: 1px; /* Para adicionar um espaço entre os botões */
+}
+
+
+
+.search .lupa {
+    height: 0.6cm;
+}
+
+
+.menu {
+    font-family: 'montserrat';
+    font-size: 15px;
+    display: flex;
+    padding: 10px 10px 10px 50px;
+    gap: 17rem;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.melhores-ofertas-personalizadas {
+    display: flex;
+    font-family: "montserrat";
+    width: 600px;
+    padding: 50;
+    margin: 10px;
+    gap: 3rem;
+    text-justify: distribute-all-lines; /* Ajusta o espaço entre as palavras */
+}
+
+.ver-ofertas {
+    background-color: #2069c9;
+    color: white;
+    border: 0;
+    height: 0.8cm;
+    width: 3.5cm;
+    font-family: 'montserrat';
+    border-radius: 5px;
+}
+
+.melhores-ofertas {
+    color: orange;
+}
+
+.queima-nike {
+    font-size: 2.2rem;
+}
+
+h3:hover {
+    color: #c92071;
+    text-decoration: underline;
+}
+
+h6{
+font-size:20px;
+  text-align: justify; /* Justifica o texto */
+  text-justify: distribute-all-lines; /* Ajusta o espaço entre as palavras */
+  font-size: 16px; /* Tamanho do texto */
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444;
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("https://www.garotogeek.com.br/wp-content/uploads/2017/07/bob.webp") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://static.vecteezy.com/ti/fotos-gratis/t1/29232746-criativo-brilhante-colorida-tenis-em-abstrato-fundo-generativo-ai-foto.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://www.namesnack.com/images/namesnack-sneaker-business-names-2400x2400-20210826.jpg?crop=21:16,smart&width=420&dpr=2") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://img.freepik.com/fotos-premium/um-tenis-nike-branco-sobre-um-fundo-colorido-com-bolas-coloridas_884243-361.jpg?w=740") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("https://img.freepik.com/fotos-gratis/um-tenis-que-tem-a-palavra-nike-nele_123827-23436.jpg?t=st=1714392593~exp=1714396193~hmac=5b047d291ccd00164ac722f8cf739472506d56dd9c1b52e2bc633b6ad5bca39a&w=740") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("https://img.freepik.com/fotos-premium/um-par-de-tenis-nike-e-iluminado-com-uma-luz-azul-no-topo_861949-508.jpg?w=740") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+.container {
+display: grid;
+  grid-template-columns: repeat(3, 340px); /* Define 3 colunas de 100px cada */
+  grid-gap: 30px; /* Espaçamento entre os produtos */
+  margin-left: -165px; /* Ajusta a margem esquerda */
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 10px 725px 0px 600px;
+    margin-left: -275px;
+    border: 1px solid #000; 
+  }
+
+  
+  footer h3 {
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  footer form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer input[type="email"] {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  footer button[type="submit"] {
+    background-color: #007bff;
+    color: #000000;
+    padding: 20px 200px 10px 170px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  footer button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+  footer .social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  footer .social-media a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-media a:hover {
+    color: #ffffff;
+  }
+
+  .rodape{
+    display: flex; /* Define o display como flexível */
+    justify-content: center; /* Alinha o conteúdo ao centro horizontalmente */
+    align-items: center;
+  }
